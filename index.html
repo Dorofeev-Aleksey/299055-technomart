@@ -7,33 +7,28 @@
   <body>
     <header class="main-header">
       <div class="container header-first">
-        <div class="main-page">
+        <h1 class="main-page">
           <a href="#">ТЕХНОМАРТ</a>
-        </div>
-        <div class="search">
-          <a href="#">Поиск:</a>
-        </div>
-        <div class="marker">
-          <a href="#">Закладки: 0</a>	
-        </div>
-        <div class="basket">
-          <a href="#">Корзина: 0</a>	
-        </div>
-        <div class="make-order">
-          <a href="#">Оформить заказ</a>	
-        </div>
+        </h1>
+        <form action="#" method="get" class="search" >
+          <input type="search" name="header-search" placeholder="Поиск">
+          <input type="image" name="search-loupe" src="#" alt="Кнопка поиска">
+        </form>
+          <a href="#" class="marker">Закладки: 0</a>	
+          <a href="#" class="basket">Корзина: 0</a>	
+          <a href="#" class="make-order">Оформить заказ</a>	
       </div>
-      <div class="container header-second">
-      	<p>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
-      	<div class="phone-number">
-      	  <a href="#" class="phone">+7 (812) 555-05-55</a>	
+      <div class="container header">
+        <div class="short-description">
+      	  <p>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
       	</div>
-      	<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      	<div class="address">
+      	  <a href="#">+7 (812) 555-05-55</a>	
+      	  <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      	</div>  
       	<div class="user-block">
-      	  <a class="login" href="#">Войти</a>
-      	</div>
-      	<div class="user-block">
-      	  <a class="registration" href="#">Регистрация</a>
+      	  <a class="login login-btn" href="#">Войти</a>
+      	  <a class="registration login-btn" href="#">Регистрация</a>
       	</div>
       	<nav>
       	  <ul>
@@ -63,129 +58,148 @@
       </div>  
     </header>
     <main class="container">
-      <div class="banners">
+      <div class="promo-1">
       	<div class="banner-1">
       	  <p>Материалы</p>
-      	  <a href="#" class="btn-baner">НА ЛЮБОЙ ВКУС</a>	
+      	  <a href="#" class="btn-banner">НА ЛЮБОЙ ВКУС</a>	
       	</div>
       	<div class="banner-2">
       	  <p>Инструмент</p>
-      	  <a href="#" class="btn-baner">НА ВСЕ СЛУЧАИ</a>	
+      	  <a href="#" class="btn-banner">НА ВСЕ СЛУЧАИ</a>	
       	</div>
       	<div class="banner-3">
       	  <p>Техника</p>
-      	  <a href="#" class="btn-baner">ДЛЯ СТРОЙКИ</a>	
+      	  <a href="#" class="btn-banner">ДЛЯ СТРОЙКИ</a>	
       	</div>
-      	<div class="banner-4">
-      	  <p>Скидка 50%</p>
-      	  <a href="#" class="btn-baner">НА 350 ТОВАРОВ</a>	
-      	</div>
-      	<div class="banner-5">
-      	  <p>Доставка</p>
-      	  <a href="#" class="btn-baner">БЕСПЛАТНО</a>	
-      	</div>
-      	<div class="slider">
-      	  <h3>ПЕРФОРАТОРЫ</h3>
-      	  <p>Настоящие мужские игрушки</p>
-      	  <input type="button" name="prev-slide">
-      	  <input type="button" name="next-slide">
-      	  <input type="button" name="first-slide">
-      	  <input type="button" name="second-slide">
+      </div>
+      <div class="promo-2">
+        <div class="slider">
+      	  <div class="slider-controls">
+      	    <input type="button" name="prev-slide">
+      	    <input type="button" name="next-slide">
+      	    <input type="button" name="first-slide">
+      	    <input type="button" name="second-slide">
+      	  </div>
+      	  <div class="slider-slides">
+      	    <div class="slider-slide">
+      	      <h3>ПЕРФОРАТОРЫ</h3>
+      	      <p>Настоящие мужские игрушки</p>
+      	    </div>
+      	    <div class="slider-slide">
+      	      <h3>ДРЕЛИ</h3>
+      	      <p>Соседям на радость</p>
+      	    </div>
+      	  </div>  
       	  <a href="#" class="btn-red">ОТКРЫТЬ КАТАЛОГ</a>
       	</div>
-      	<div class="popular-products">
-      	  <div class="caption">
-      	    <h2>Популярные товары:</h2>
-      	  	<a href="#" class="btn-red">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+      	<div class="banners-last">	
+      	  <div class="banner-4">
+      	    <p>Скидка 50%</p>
+      	    <a href="#" class="btn-banner">НА 350 ТОВАРОВ</a>	
       	  </div>
+      	  <div class="banner-5">
+      	    <p>Доставка</p>
+      	    <a href="#" class="btn-banner">БЕСПЛАТНО</a>	
+      	  </div>
+      	</div>  
+      </div>	
+      	<section class="popular-products">
+      	  <header class="caption">
+      	    <h2>Популярные товары:</h2>
+      	  	<a href="#" class="btn product-btn">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+      	  </header>
           <div class="products">
-            <article>
+            <article class="card product-card">
           	  <figure class="product">
           	    <img scr="img/img.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000»">
           	    <figcaption>Перфоратор BOSCH<br> BFG 9000</figcaption>
           	  </figure>
           	  <div class="price">
           	    <span>32500 Р.</span>
-          	    <a href="#" class="btn-red">25500 Р.</a>
+          	    <a href="#" class="btn ">25500 Р.</a>
           	  </div>          	
             </article>
-            <article>
+            <article class="card product-card">
           	  <figure class="product">
           	    <img scr="img/img.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 3000»">
           	    <figcaption>Перфоратор BOSCH<br> BFG 3000</figcaption>
           	  </figure>
           	  <div class="price">
           	    <span>22500 Р.</span>
-          	    <a href="#" class="btn-red">15500 Р.</a>
+          	    <a href="#" class="btn ">15500 Р.</a>
           	  </div>          	
             </article>
-            <article>
+            <article class="card product-card">
           	  <figure class="product">
           	    <img scr="img/img.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 6000»">
           	    <figcaption>Перфоратор BOSCH<br> BFG 6000</figcaption>
           	  </figure>
           	  <div class="price">
           	    <span>30500 Р.</span>
-          	    <a href="#" class="btn-red">25500 Р.</a>
+          	    <a href="#" class="btn ">25500 Р.</a>
           	  </div>          	
             </article>
-            <article>
+            <article class="card product-card">
           	  <figure class="product">
           	    <img scr="img/img.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 2000»">
           	    <figcaption>Перфоратор BOSCH<br> BFG 2000</figcaption>
           	  </figure>
           	  <div class="price">
-          	    <a href="#" class="btn-red">12500 Р.</a>
+          	    <a href="#" class="btn ">12500 Р.</a>
           	  </div>          	
             </article>
       	    </div>
       	  </div>
-      	</div>  
-      	<div class="popular-manufacturer">
-      	  <div class="caption">
+      	</section>  
+      	<section class="popular-manufacturer">
+      	  <header class="caption">
       	    <h2>Популярные производители:</h2>
       	  	<a href="#" class="btn-red">ВСЕ ПРОИЗВОДИТЕЛИ</a>
-      	  </div> 
-      	  <div class="compuny">
-      	  	<figure>
+      	  </header> 
+      	  <div class="companies">
+      	  	<figure class="card company-card">
       	  		<img src="img/img.jpg" width="185" height="80" alt="BOSCH">
       	  	</figure>
-      	  	<figure>
+      	  	<figure class="card company-card">
       	  		<img src="img/img.jpg" width="185" height="80" alt="Makita">
       	  	</figure>
-      	  	<figure>
+      	  	<figure class="card company-card">
       	  		<img src="img/img.jpg" width="185" height="80" alt="DeWALT">
       	  	</figure>
-      	  	<figure>
+      	  	<figure class="card company-card">
       	  		<img src="img/img.jpg" width="185" height="80" alt="Интерскол">
       	  	</figure>
-      	  	<figure>
+      	  	<figure class="card company-card">
       	  		<img src="img/img.jpg" width="185" height="80" alt="HITACHI">
       	  	</figure>
-      	  	<figure>
+      	  	<figure class="card company-card">
       	  		<img src="img/img.jpg" width="185" height="80" alt="LG">
       	  	</figure>
-      	  	<figure>
+      	  	<figure class="card company-card">
       	  		<img src="img/img.jpg" width="185" height="80" alt="AEG">
       	  	</figure>
-      	  	<figure>
+      	  	<figure class="card company-card">
       	  		<img src="img/img.jpg" width="185" height="80" alt="metabo">
       	  	</figure>
       	  </div> 	
-      	</div>
-      	<div class="Services">
+      	</section>
+      	<div class="services">
       	  <h2>Сервисы</h2>
       	  <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          <input type="button" name="btn-delivery" value="Доставка">
-          <input type="button" name="btn-guarantee" value="Гарантия">
-          <input type="button" name="btn-сredit" value="Кредит">
-          <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо<br> 
-             к вашему подъезду совершенно бесплатно!<br>
-             Ведь мы неплохо заработаем,<br> 
-             поднимая его на ваш этаж!</p>	 
-      	</div>
+          <div class="services-sliders">
+            <div class="services-slider-controls">
+              <input type="button" name="btn-delivery" value="Доставка" class="service-btn delivery-btn">
+              <input type="button" name="btn-guarantee" value="Гарантия" class="service-btn guarantee-btn">
+              <input type="button" name="btn-сredit" value="Кредит" class="sexrvice-btn сredit-btn">
+            <div>
+            <div class="services-slider-slides">  
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо<br> 
+                 к вашему подъезду совершенно бесплатно!<br>
+                 Ведь мы неплохо заработаем,<br> 
+                 поднимая его на ваш этаж!</p>	 
+      	    </div>
       	<div class="about-store">
       	  <div class="left-column">
       	    <h2>Компания «Техномарт»</h2>
@@ -215,9 +229,9 @@
     <footer class="container">
      <div class="footer-up">
       <nav class="footer-nav">
-      	<div class="main-page">
+      	<h3 class="main-page footer-logo">
           <a href="#">ТЕХНОМАРТ</a>
-        </div>
+        </h3>
         <ul>
       	  	<li>
       	  	  <a href="#">Компания</a>	
@@ -265,7 +279,7 @@
      </section>
      <section class="footer-feedback">
        <p>Обратная связь:</p>
-       <a class="btn" href="mail@htmlacademy.ru">HTML Academy</a>
+       <a class="btn" href="mailto:mail@htmlacademy.ru">HTML Academy</a>
      </section>
      <section class="footer-develop">
        <p>Разработано:</p>
