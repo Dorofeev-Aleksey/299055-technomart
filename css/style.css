@@ -634,6 +634,38 @@ main{
   cursor: pointer;
 }
 
+.slide-next{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 4px solid white;
+  top: 120px;
+  right: 25px;
+  z-index: 1000;
+  transform: rotate(45deg);
+  border-radius: 2px;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slide-prev{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 4px solid white;
+  top: 120px;
+  left: 25px;
+  z-index: 1000;
+  transform: rotate(-135deg);
+  border-radius: 2px;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"]{
@@ -1180,6 +1212,7 @@ main{
 
 .services-background{
   background-color: #f2f6f8;
+  height: 522px;
 }
 
 .services-sliders{
@@ -1238,7 +1271,125 @@ main{
 }
 
 .services-background{
-  padding-top: 65px;
+  padding-top: 45px;
+}
+
+.services{
+  padding-bottom: -200px;
+}
+
+.services-slider{
+  height: 280px;
+  width: 940px;
+  position: relative;
+}
+
+.services-slider input[type="radio"]{
+  position: absolute;
+  opacity: 0;
+}
+
+.services-slider-controls{
+  position: absolute;
+  width: 240px;
+  height: 184px;
+  top: 50px;
+  left: 0px;
+  z-index: 1000;
+  text-align: center;
+}
+
+.services-slider-controls label{
+  display: block;
+  height: 45px;
+  width: 220px;
+  background-color: #32425c;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  color: white;
+  font-family: "Cuprum";
+  font-weight: bold;
+  padding-top: 15px;
+  padding-left: 20px;
+  box-shadow: 0px -1px 0px 0px rgba(41, 52, 73, 0.75) inset;
+}
+
+#service-btn-1:checked ~ .services-slider-controls label[for="service-btn-1"],
+#service-btn-2:checked ~ .services-slider-controls label[for="service-btn-2"],
+#service-btn-3:checked ~ .services-slider-controls label[for="service-btn-3"] {
+  background-color: white;
+  color: #32425c;
+}
+
+.services-slide{
+  position: absolute;
+  top: 20px;
+  left: 320px;
+  width: 100%;
+  height: 100%;
+}
+
+.services-slider .shadow{
+  height: 290px;
+  width: 25px;
+  position: absolute;
+  top: 10px;
+  left: 230px;
+  background-image: url("../img/slide-shadow.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 1001;
+}
+
+.services-slide-text h3{
+  font-size: 36px;
+  color: #32425c; 
+  text-transform: uppercase;
+}
+
+.services-slide-text{
+  font-size: 13px;
+}
+
+.services-slides .services-slide-text .slide-btn{
+  width: 130px;
+}
+
+.services-slide:nth-child(1){
+  background-image: url(../img/delivery-image.png);
+  background-repeat: no-repeat;
+  background-position: 30% 10px;
+}
+
+.services-slide:nth-child(2){
+  background-image: url(../img/guarantee-image.png);
+  background-repeat: no-repeat;
+  background-position: 40% 10px;
+}
+
+.services-slide:nth-child(3){
+  background-image: url(../img/credit-image.png);
+  background-repeat: no-repeat;
+  background-position: 40% 10px;
+}
+
+.services-slide{
+  display: none;
+}
+
+#service-btn-1:checked ~ .services-slides .services-slide:nth-child(1){
+  display: block;
+}
+
+#service-btn-2:checked ~ .services-slides .services-slide:nth-child(2){
+  display: block;
+}
+
+#service-btn-3:checked ~ .services-slides .services-slide:nth-child(3){
+  display: block;
 }
 
 .services-header h2{
@@ -1249,6 +1400,10 @@ main{
 
 .services-header p{
   font-size: 13px;
+}
+
+.services-header{
+  margin-bottom: 15px;
 }
 
 .footer-up{

@@ -82,7 +82,9 @@
       <div class="promo-2 container clearfix">
         <div class="slider">
           <input type="radio" id="btn-1" name="toggle-1" checked>
-          <input type="radio" id="btn-2" name="toggle-2">
+          <input type="radio" id="btn-2" name="toggle-1">
+          <button name="slide-next" class="slide-next"></button>
+          <button name="slide-prev" class="slide-prev"></button>
           <div class="slider-controls">
             <label for="btn-1"></label>
             <label for="btn-2"></label>
@@ -200,7 +202,7 @@
       	  	</a>
       	  	<a href="#" class="company-card">
       	  		<img src="img/AEG.jpg" width="151" height="96" alt="AEG">
-      	  	</figure>
+            </a>  
       	  	<a href="#" class="company-card">
       	  		<img src="img/Metabo.jpg" width="204" height="69" alt="metabo">
       	  	</a>
@@ -213,34 +215,44 @@
       	    <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </header>
-          <div class="services-sliders">
-              <input type="radio" name="ervices-radiobtn" value="Доставка" class="services-radiobtn" id="delivery">
-              <input type="radio" name="btn-guarantee" value="Гарантия" class="services-radiobtn" id="guarantee">
-              <input type="radio" name="btn-сredit" value="Кредит" class="services-radiobtn" id="credit">
+          <div class="services-slider">
+            <div class="shadow"></div>
+            <input type="radio" name="toggle-2" id="service-btn-1" checked="">
+            <input type="radio" name="toggle-2" id="service-btn-2">
+            <input type="radio" name="toggle-2" id="service-btn-3">
             <div class="services-slider-controls">
-              <label for="delivery">Доставка</label>
-              <label for="guarantee">Гарантия</label>
-              <label for="credit">Кредит</label>  
+              <label for="service-btn-1">Доставка</label>
+              <label for="service-btn-2">Гарантия</label>
+              <label for="service-btn-3">Кредит</label>  
             </div>
-            <div class="services-slide">  
-              <h3>Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо<br> 
-                 к вашему подъезду совершенно бесплатно!<br>
-                 Ведь мы неплохо заработаем,<br> 
-                 поднимая его на ваш этаж!</p>	 
-      	    </div>
-      	    <div class="services-slide">  
-              <h3>Гарантия</h3>
-              <p>Если купленный у нас товар поломается или заискрит,<br> 
-                 а также в случае пожара, спровоцированного его возгаранием,<br>
-                 вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br> 
-                 Дом уж восстановите как-нибудь сами.</p>	 
-      	    </div>
-      	    <div class="services-slide">  
-              <h3>Кредит</h3>
-              <p>Залезть в долговую яму стало проще!<br> 
-                 Кредитные консультанты придут вам на помощь.</p>	 
-      	    </div>
+            <div class="services-slides">
+              <div class="services-slide">  
+                <div class="services-slide-text">
+                  <h3>Доставка</h3>
+                  <p>Мы с удовольствием доставим ваш товар прямо<br> 
+                     к вашему подъезду совершенно бесплатно!<br>
+                     Ведь мы неплохо заработаем,<br> 
+                     поднимая его на ваш этаж!</p>	 
+                </div>     
+      	      </div>
+      	      <div class="services-slide">  
+                <div class="services-slide-text">
+                  <h3>Гарантия</h3>
+                  <p>Если купленный у нас товар поломается или заискрит,<br> 
+                     а также в случае пожара, спровоцированного его возгаранием,<br>
+                     вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br> 
+                     Дом уж восстановите как-нибудь сами.</p>	 
+                </div>     
+      	      </div>
+      	      <div class="services-slide">  
+                <div class="services-slide-text">
+                  <h3>Кредит</h3>
+                  <p>Залезть в долговую яму стало проще!<br> 
+                     Кредитные консультанты придут вам на помощь.</p>
+                  <a href="#" class="btn banner-btn">Узнать Больше</a>   	 
+                </div>   
+      	      </div>
+            </div>   
       	  </div>
       	</section> 
       </div>	 
